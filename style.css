@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 43vh;
+    min-width: 75vw;
+    padding-top: 10vh;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(36,0,0);
+    background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(228,32,32,1) 52%, rgba(121,9,9,1) 100%);
+    width: 75vw;
+    border-radius: 10px 10px 0 0;
+}
+.head h1{
+    color: white;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+button{
+    width: 37.5vw;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+.tax img{
+    height: 4.5vh;
+}
+.inctax img{
+    height: 4.5vh;
+}
+.tax p{
+    padding: 7.5px;
+}
+.inctax p{
+    padding: 7.5px;
+}
+.insert{
+    width: 75vw;
+    max-width: 75vw;
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+}
+.yr{
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-image: radial-gradient(farthest-corner at 40px 40px,#2f2547 0%, #130f1f 100%);
+    border: 0.5px solid white;
+    min-height: 6vh;
+}
+.payer{
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-image: radial-gradient(farthest-corner at 40px 40px,#2f2547 0%, #130f1f 100%);
+    border: 0.5px solid white;
+    min-height: 6vh;
+}
+.gender{
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-image: radial-gradient(farthest-corner at 40px 40px,#2f2547 0%, #130f1f 100%);
+    border:0.5px solid white;
+    min-height: 6vh;
+}
+.residence{
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-image: radial-gradient(farthest-corner at 40px 40px,#2f2547 0%, #130f1f 100%);
+    border: 0.5px solid white;
+    min-height: 6vh;
+}
+.income{
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-image: radial-gradient(farthest-corner at 40px 40px,#2f2547 0%, #130f1f 100%);
+    border: 0.5px solid white;
+    min-height: 6vh;
+}
+.desc{
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    padding: 0 0 0 30px;
+}
+.desc p{
+    padding: 0 0 0 15px;
+}
+/* .desc h4{
+    font-family: 'Ramaraja', serif;
+    font-size: 18px;
+} */
+.into{
+    width: 35vw;
+    display: flex;
+    justify-content: flex-end;
+}
+.into{
+    padding: 0 30px 0 0;
+}
+.into select{
+    width: 10vw;
+    height: 30px;
+    border: none;
+    border-radius: 12px;
+    padding: 0 0 0 5px;
+}
+.into input{
+    width: 9.8vw;
+    height: 30px;
+    border: none;
+    border-radius: 12px;
+    padding: 0 0 0 3px;
+    text-align: center;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 30vh;
+    min-width: 75vw;
+}
+.head2{
+    background: rgb(36,0,0);
+    background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(228,32,32,1) 52%, rgba(121,9,9,1) 100%);
+    color: white;
+    display: flex;
+    min-width: 75vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+.taxout{
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-image: linear-gradient(to bottom,#c2a8ff,#ebe3ff);
+    min-height: 6.5vh;
+    border: 0.5px solid black;
+}
+.surcharge{
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-image: linear-gradient(to bottom,#c2a8ff,#ebe3ff);
+    min-height: 6.5vh;
+    border: 0.5px solid black;
+}
+.health{
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-image: linear-gradient(to bottom,#c2a8ff,#ebe3ff);
+    min-height: 6.5vh;
+    border: 0.5px solid black;
+}
+.liability{
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-image: linear-gradient(to bottom,#c2a8ff,#ebe3ff);
+    min-height: 6.5vh;
+    border: 0.5px solid black;
+}
+.desc2{
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    padding: 0 0 0 30px;
+}
+.desc2 button{
+    background-color: white;
+    width: 3vw;
+    height: 6vh;
+    /* border: none; */
+    border-radius: 35px;
+}
+.desc2 button:hover{
+    cursor: pointer;
+}
+.desc2 button img{
+    height: 5vh;
+    border-radius: 20px;
+}
+.desc2 p{
+    padding: 0 0 0 15px;
+}
+.in2{
+    width: 35vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 30px 0 0;
+}
+.in2 textarea{
+    width: 10vw;
+    height: 30px;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: larger;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>Tax Calculator</title>
+</head>
+<body>
+    <div class="box">
+        <div class="head">
+            <h1>TAXMANN'S</h1>
+        </div>
+        <div class="options">
+            <button class="tax">
+                <img src="images/calculate.png" alt="">
+                <p>TAX CALCULATOR</p>
+            </button>
+            <button class="inctax">
+                <img src="images/calculate.png" alt="">
+                <p>INCOME & TAX CALCULATOR</p>
+            </button>
+        </div>
+        <div class="insert">
+            <div class="yr">
+                <div class="desc">
+                    <h4>Step 1:</h4>
+                    <p>Assessment Year</p>
+                </div>
+                <div class="into">
+                    <select name="years" id="i1">
+                        <option value="2019-2020">2019-2020</option>
+                        <option value="2020-2021">2020-2021</option>
+                        <option value="2021-2022">2021-2022</option>
+                        <option value="2022-2023">2022-2023</option>
+                    </select>
+                </div>
+            </div>
+            <div class="payer">
+                <div class="desc">
+                    <h4>Step 2:</h4>
+                    <p>Tax Payer</p>
+                </div>
+                <div class="into">
+                    <select name="payer" id="i2">
+                        <option value="individual">Individual</option>
+                        <option value="Co-operative Society">Co-operative Society</option>
+                        <option value="llp">LLP</option>
+                        <option value="firm">Firms</option>
+                        <option value="Foreign Company">Foreign Company</option>
+                        <option value="Domestic Company">Domestic Company</option>
+                        <option value="huf">HUF</option>
+                        <option value="aop">AOPs/BOI</option>
+                    </select>
+                </div>
+            </div>
+            <div class="gender">
+                <div class="desc">
+                    <h4>Step 3:</h4>
+                    <p>Male/Female/Senior Citizen</p>
+                </div>
+                <div class="into">
+                    <select name="gender" id="i3">
+                        <option value="male">Male</option>
+                        <option value="fmale">Female</option>
+                        <option value="sczen">Senior Citizen</option>
+                        <option value="ssczen">Super Senior Citizen</option>
+                    </select>
+                </div>
+            </div>
+            <div class="residence">
+                <div class="desc">
+                    <h4>Step 4:</h4>
+                    <p>Residential Status</p>
+                </div>
+                <div class="into">
+                    <select name="residential" id="i4">
+                        <option value="res">Resident</option>
+                        <option value="nres">Non Resident</option>
+                        <option value="nores">Not Ordinary Resident</option>
+                    </select>
+                </div>
+            </div>
+            <div class="income">
+                <div class="desc">
+                    <h4>Step 5:</h4>
+                    <p>Net Taxable Income</p>
+                </div>
+                <div class="into">
+                    <input type="number" name="incme" id="i5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="result">
+        <div class="head2">
+            <h1>YOUR TAX COMPUTATION</h1>
+        </div>
+        <div class="output">
+            <div class="taxout">
+                <div class="desc2">
+                    <button onclick="incometax();"><img src="images/play.png" alt=""></button>
+                    <p>Income Tax</p>
+                </div>
+                <div class="in2">
+                    <textarea name="tax1" id="out1" cols="30" rows="1" readonly></textarea>
+                </div>
+            </div>
+            <div class="surcharge">
+                <div class="desc2">
+                    <button onclick="surcharge();"><img src="images/play.png" alt=""></button>
+                    <p>Surcharge</p>
+                </div>
+                <div class="in2">
+                    <textarea name="tax2" id="out2" cols="30" rows="1" readonly></textarea>
+                </div>
+            </div>
+            <div class="health">
+                <div class="desc2">
+                    <button onclick="health();"><img src="images/play.png" alt=""></button>
+                    <p>Health & Education Cess @ 4%</p>
+                </div>
+                <div class="in2">
+                    <textarea name="tax3" id="out3" cols="30" rows="1" readonly></textarea>
+                </div>
+            </div>
+            <div class="liability">
+                <div class="desc2">
+                    <button onclick="liability();"><img src="images/play.png" alt=""></button>
+                    <p>Total Tax Liability</p>
+                </div>
+                <div class="in2">
+                    <textarea name="tax3" id="out4" cols="30" rows="1" readonly></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
